@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  main{
+    p;
+  }
+.recently-played {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+}
+.card-container{
+    display: inline;
+    flex-wrap: wrap;
+    width:80%;
+    overflow: auto;
+    gap: 10px;
+
+}
+.card{
+    background-color: #f0f0f0;
+    display: flex;
+    width: 125px;
+    margin: 10px;
+    text-align:center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+    /* overflow: auto;
+    gap: 10px; */
+}
+
+.card img {
+    width: 100%;
+}

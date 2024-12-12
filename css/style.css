@@ -16,7 +16,6 @@ body {
     justify-content: ;
 }
 .card-container{
-    display: inline;
     flex-wrap: wrap;
     width:80%;
     overflow: auto;
@@ -24,6 +23,7 @@ body {
 
 }
 .card{
+    display: inline;
     background-color: #f0f0f0;
     display: flex;
     width: 125px;

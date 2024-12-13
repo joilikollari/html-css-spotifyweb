@@ -12,71 +12,64 @@
     <!--link css esterno-->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!--media quiries-->
+
+      <!--da 480px in su-->
+    <link rel="stylesheet" href="./css/media-mobile-first-s.css">
+    <!--da 768px in su-->
+    <link rel="stylesheet" href="./css/media-mobile-first-md.css">
+    <!--da 1024px in su-->
+    <link rel="stylesheet" href="./css/media-mobile-first-lg.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Spotify</div>
-        <button>Effettua l'upgrade</button>
-            
-    </header>
-    <main>
-        <div class="left-column">
-            <h3><a href="#"><i class="fas fa-home"></i></a>Home</h3>
-            <p><a href="#"><i class="fas fa-search"></i></a>cerca</p>
-            <div class="playlist">
-                <h2>Playlist</h2>
-         </div>
-         </div>
-       
-        <section class="card-container">
-            <h2>Recently played</h2>
-            <div class="card">
-                <div class="card">
-               <figure><img src="./spotify/img/metal_lifting.jpg" alt="">
-                <h3>Pantera</h3>
-               </figure> 
-                <p>Heavy Metal</p>
-            </div>
-            <div class="card">
-                <figure class="img"><img src="" alt="">
-                 <h3>Pantera</h3>
-                </figure> 
-                 <p>Heavy Metal</p>
-             </div>
-             <div class="card">
-                <figure class="img"><img src="" alt="">
-                 <h3>Pantera</h3>
-                </figure> 
-                 <p>Heavy Metal</p>
-             </div>
-             <div class="card">
-                <figure class="img"><img src="" alt="">
-                 <h3>Pantera</h3>
-                </figure> 
-                 <p>Heavy Metal</p>
-             </div>
-             <div class="card">
-                <figure class="img"><img src="" alt="">
-                 <h3>Pantera</h3>
-                </figure> 
-                 <p>Heavy Metal</p>
-             </div>
-             <div class="card">
-                <figure class="img"></figure><img src="" alt="">
-                 <h3>Pantera</h3>
-                </figure> 
-                 <p>Heavy Metal</p>
-             </div>
+     <div class="layout-top">
+        <div class="Layout__sidebar">
+            <div class="layout__sidebar—-top"></div>
+                <div class="layout__sidebar--logos">
+                    <a href="#">
+                        <img width="25px" src="./spotify/img/logo-small.svg"alt="logo smartphone">
+                        <img width="100px" src="./spotify/img/logo.svg"alt="logo big">
+                    </a>
+                </div>
+                <!--sidebar menù-->
+                <div class="layout__sidebar--menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span>
+                                    home
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-magnfying-glass"></i>
+                                <span>
+                                    cerca
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div class=" layout__sidebar—-bottom"></div>
 
-            
             </div>
-            </section>
-    </main>
-    <footer>
-        <div class="container-foot">
+            <div class="layout__main">
+                <div class="layout__cta">
+                    <a href="#" class="btn btn—-pill">
+                        Effettua l'upgrade
+                    </a>
+                </div>
+                <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vitae atque perspiciatis repellat praesentium iste velit, asperiores odit reiciendis dicta beatae? Vitae voluptates doloremque ab accusantium! Quidem corrupti laborum autem.
+                </div>
 
-        </div>
-    </footer>
+            </div>
+    </div>
+    <div class="layout-bottom">
+
+    </div>
 </body>
 </html>
     

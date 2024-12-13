@@ -1,41 +1,83 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  header{
-    display: flex;
-    justify-content: space-between;
-  }
-  main{
-    display: flex;
-    height: 100vh;
-  }
-.recently-played {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: ;
+:root{
+  --color-cta: rgba(9, 11, 18, 0.7);
+  --color-sidebar: #000000;
+  --color-main: #141922;
+  --color-footer: #282828;
+  --color-text: #797BB1;
+  --color-text-link: #ADFF2E;
 }
-.card-container{
-    flex-wrap: wrap;
-    width:80%;
-    overflow: auto;
-    gap: 10px;
+body{
+  background-color: var(--color-main);
+}
+.layout-top{
+  height: 90vh;
+  border: 3px solid lightgreen;
+  display: flex;
 
 }
-.card{
-    display: inline;
-    background-color: #f0f0f0;
-    display: flex;
-    width: 125px;
-    margin: 10px;
-    text-align:center;
-    border: 1px solid #ccc;
-    padding: 10px;
+.layout-bottom{
+  height: 10vh;
+  /* border: 3px solid lightcoral; */
+} 
+
+.layout__sidebar{
+  flex-basis: 10%;
+  /* border: 3px solid lightcyan; */
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-sidebar);
+
+  padding: 10px;
+  /* justify-content: space-between; */
+}
+.layout__main{
+  flex-basis: 90%;
+  /* border: 3px solid lightsalmon; */
+  overflow-y: auto;
+}
+.layout__cta{
+  /* border: 3px solid lightgreen; */
+  padding: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-cta);
+  font-size: 0.8rem;
+}
+.btn{
+  border: 1px solid white;
+}
+.layout__sidebar--top{
+  border: 3px solid lightcyan;
+  height: calc(100% - 100px);
+}
+
+.layout__sidebar--bottom{
+  border: 3px solid lightcoral;
+ height: 100px;
+}
+.layout-bottom{
+  background-color: var(--color-footer);
+  
+}
+.layout__sidebar--logo img[alt$="big"]{
+ display: none;
+}
+
+.layout__sidebar--menus ul li a span{
+  display none;
+}
+
+.layout__sidebar--menus ul{
+
+  display: flex: ;
+  flex-direction: column;
+  gap: 8px;
+  align-items:center;
     
-    /* overflow: auto;
-    gap: 10px; */
-}
 
-.card img {
-    width: 150px;
 }

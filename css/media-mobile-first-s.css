@@ -1,0 +1,39 @@
+@media screen and ( min-with: 480px){
+    .layout__cta{
+        font-size: 1rem;
+    }
+
+    .layout__sidebar--logo img[alt$="small"]{
+        display: none;
+    }
+
+    .layout__sidebar--logo img[alt$="big"]{
+        display: inline-block;
+    }
+
+    .layout__sidebar{
+        max-width: 800px;
+        flex-shrink: 0;
+    }
+
+    .layout__main{
+        flex-basis: calc(100% - 800px);
+    }
+    .layout_sidebar-menus ul li a span{
+        display: inline;
+
+    }
+    .layout_sidebar-menus ul{
+        align-items: flex-start;
+    }
+    .layout_sidebar-menus ul li{
+        border-right: 2px solid  var(--light);
+    } 
+
+}
+
+
+
+
+    
+ 
